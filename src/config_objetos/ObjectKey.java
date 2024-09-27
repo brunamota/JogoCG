@@ -12,5 +12,7 @@ public class ObjectKey extends SuperObject{
             image = ImageIO.read(getClass().getResourceAsStream("/objetos/key.png"));
         } catch (IOException e) {
         }
+        
+        collision = true;
     }
 }

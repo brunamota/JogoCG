@@ -11,5 +11,6 @@ public class ObjectDoor extends SuperObject{
             image = ImageIO.read(getClass().getResourceAsStream("/objetos/Door.png"));
         } catch (IOException e) {
         }
+        collision = true;
     }
 }
