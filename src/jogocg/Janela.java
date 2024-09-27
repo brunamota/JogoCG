@@ -18,6 +18,8 @@ public class Janela extends JFrame{
         
         janela.pack();
         
+        gamePanel.setUpGame();
+        
         gamePanel.startGameThread();
         
         janela.setLocationRelativeTo(null);
