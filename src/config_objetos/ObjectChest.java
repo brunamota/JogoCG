@@ -12,5 +12,7 @@ public class ObjectChest extends SuperObject{
             image = ImageIO.read(getClass().getResourceAsStream("/objetos/chest.png"));
         } catch (IOException e) {
         }
+        
+        collision = true;
     }
 }

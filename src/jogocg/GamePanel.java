@@ -31,6 +31,9 @@ public class GamePanel extends JPanel implements Runnable{
     
     int FPS = 60;
     
+    Musica musica = new Musica();
+    Musica efeito = new Musica();
+    
     KeyHandler tecla = new KeyHandler();
     
     public CollisionChecker cChecker = new CollisionChecker(this);
@@ -54,6 +57,8 @@ public class GamePanel extends JPanel implements Runnable{
     
     public void setUpGame(){
         aSetter.setObject();
+        
+        playMusica(0);
     }
      
     public void startGameThread(){
@@ -117,4 +122,18 @@ public class GamePanel extends JPanel implements Runnable{
         
     }
     
+    public void playMusica(int i){
+       musica.setFile(i);
+       musica.play();
+       musica.loop();
+    }
+    
+    public void stopMusic(){
+        musica.stop();
+    }
+    
+    public void playSE(int i){
+        efeito.setFile(i);
+        efeito.play();
+    }
 }

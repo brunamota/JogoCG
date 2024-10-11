@@ -1,6 +1,7 @@
 
 package jogocg;
 
+import config_objetos.ObjectBoot;
 import config_objetos.ObjectChest;
 import config_objetos.ObjectDoor;
 import config_objetos.ObjectKey;
@@ -42,6 +43,10 @@ public class AssetSetter {
         gp.obj[6] = new ObjectChest();
         gp.obj[6].worldX = 10 * gp.tileFinal;
         gp.obj[6].worldY = 7 * gp.tileFinal;
+        
+        gp.obj[7] = new ObjectBoot();
+        gp.obj[7].worldX = 37 * gp.tileFinal;
+        gp.obj[7].worldY = 42 * gp.tileFinal;
     }
     
 }
